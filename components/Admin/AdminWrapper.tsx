@@ -1,7 +1,9 @@
+import LoginForm from "./LoginForm";
+
 const AdminWrapper = () => {
     return (
-        <div>
-            
+        <div className='h-full'>
+            <LoginForm />
         </div>
     )
 }
