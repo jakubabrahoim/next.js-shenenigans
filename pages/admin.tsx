@@ -1,9 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
-import Navigation from '../components/Navigation/Navigation'
+import Navigation from '../components/Navigation/Navigation';
 
 const Cooking: NextPage = () => {
 	return (
@@ -11,7 +9,7 @@ const Cooking: NextPage = () => {
 			<Head>
 				<title>Admin</title>
 			</Head>
-            <Navigation />
+            <Navigation navigationType='admin' />
 		</section>
 	)
 }

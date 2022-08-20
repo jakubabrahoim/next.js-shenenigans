@@ -5,7 +5,21 @@ import { GiKnifeFork } from 'react-icons/gi';
 import { BsPencil } from 'react-icons/bs';
 import { GrUserAdmin } from 'react-icons/gr';
 
-const Navigation = () => {
+interface Props {
+    navigationType?: 'admin' | undefined;
+}
+
+const Navigation = (props: Props) => {    
+    if(props.navigationType === 'admin') return (
+        <header>
+            <nav className='pt-2'>
+                <div className='flex'>
+                    <NavigationLink href='/' icon={<VscHome />} caption='Home' />
+                </div>
+            </nav>
+        </header>
+    )
+    
     return (
         <header>
             <nav className='mx-auto flex max-w-5xl items-center justify-between pt-2'>
