@@ -51,7 +51,7 @@ const Navigation = (props: Props) => {
                 <span className='hidden text-lg font-semibold text-jet-200 sm:block'>
                     Jakub Abrahoim
                 </span>
-                <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex-row`}>
+                <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex sm:flex-row`}>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
                     <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />
                     <NavigationLink href='/cooking' icon={<GiKnifeFork />} caption='Cooking' />
