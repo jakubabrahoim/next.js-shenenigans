@@ -1,29 +1,19 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
+import NavigationLink from "./NavigationLink";
+
+import { VscCode, VscHome } from 'react-icons/vsc';
+import { GiKnifeFork } from 'react-icons/gi';
+import { BsPencil } from 'react-icons/bs';
 
 const Navigation = () => {
-    const { pathname } = useRouter();
-    const navLinkClass: string = 'px-2 py-1 mx-2 hover:bg-gray-200 rounded-lg';
-
     return (
         <header>
-            <nav className='mx-auto mt-2 flex max-w-4xl justify-between'>
-                <span>Jakub Abrahoim</span>
-                <div>
-                    <Link href='/'>
-                        <a className={`${navLinkClass} ${pathname === '/' && 'underline decoration-gray-300 underline-offset-2'}`}>
-                            Home
-                        </a>
-                    </Link>
-                    <Link href='#'>
-                        <a className={navLinkClass}>Portfolio</a>
-                    </Link>
-                    <Link href='#'>
-                        <a className={navLinkClass}>Cooking</a>
-                    </Link>
-                    <Link href='#'>
-                        <a className={navLinkClass}>Blog</a>
-                    </Link>
+            <nav className='mx-auto mt-2 flex max-w-4xl items-center justify-between'>
+                <span className="text-lg font-semibold">Jakub Abrahoim</span>
+                <div className='flex'>
+                    <NavigationLink href='/' icon={<VscHome />} caption='Home' />
+                    <NavigationLink href='#' icon={<VscCode />} caption='Portfolio' />
+                    <NavigationLink href='#' icon={<GiKnifeFork />} caption='Cooking' />
+                    <NavigationLink href='#' icon={<BsPencil />} caption='Blog' />
                 </div>
             </nav>
         </header>
