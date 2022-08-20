@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import { IconType } from "react-icons/lib";
 import { IconContext } from "react-icons";
 
 interface Props {

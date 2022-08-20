@@ -1,7 +1,11 @@
 {
     "extends": [
         "next/core-web-vitals",
-        "plugin:tailwindcss/recommended"
+        "plugin:tailwindcss/recommended",
+        "eslint:recommended"
     ],
-    "plugins": ["tailwindcss"]
+    "plugins": ["tailwindcss"],
+    "globals": {
+        "JSX": true
+    }
 }
