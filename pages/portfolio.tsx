@@ -5,15 +5,15 @@ import Link from 'next/link'
 
 import Navigation from '../components/Navigation/Navigation'
 
-const Home: NextPage = () => {
+const Portfolio: NextPage = () => {
 	return (
 		<section className='min-h-screen bg-zinc-100'>
 			<Head>
 				<title>Home</title>
 			</Head>
-			<Navigation />
+            <Navigation />
 		</section>
 	)
 }
 
-export default Home;
+export default Portfolio;
