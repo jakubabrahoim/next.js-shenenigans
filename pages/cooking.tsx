@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation/Navigation';
 
 const Cooking: NextPage = () => {
 	return (
-		<section className='min-h-screen bg-zinc-100 font-montserrat text-stone-800'>
+		<section className='min-h-screen bg-alabaster font-montserrat text-stone-800'>
 			<Head>
 				<title>Cooking</title>
 			</Head>

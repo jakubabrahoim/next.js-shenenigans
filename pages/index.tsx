@@ -6,7 +6,7 @@ import HomeWrapper from '../components/Home/HomeWrapper';
 
 const Home: NextPage = () => {
 	return (
-		<section className='min-h-screen bg-zinc-100 font-montserrat text-stone-800'>
+		<section className='min-h-screen bg-alabaster font-montserrat text-jet-200'>
 			<Head>
 				<meta charSet='utf-8' />
 				<meta name='author' content='Jakub Abrahoim' />
