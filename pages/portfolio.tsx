@@ -7,7 +7,7 @@ import Navigation from '../components/Navigation/Navigation'
 
 const Portfolio: NextPage = () => {
 	return (
-		<section className='min-h-screen bg-zinc-100'>
+		<section className='min-h-screen bg-zinc-100 font-montserrat text-stone-800'>
 			<Head>
 				<title>Portfolio</title>
 			</Head>
