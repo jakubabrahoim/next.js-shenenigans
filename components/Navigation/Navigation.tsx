@@ -17,7 +17,7 @@ const Navigation = (props: Props) => {
     let [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     
     if(props.navigationType === 'admin') return (
-        <header>
+        <header className='h-0.5/10'>
             <nav className='pt-2'>
                 <div className='flex'>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
@@ -40,7 +40,7 @@ const Navigation = (props: Props) => {
                         <AiOutlineMenu />
                     </IconContext.Provider>
                     :
-                    <IconContext.Provider value={{ className: 'w-7 h-7 text-jet-200  text-xl' }} >
+                    <IconContext.Provider value={{ className: 'w-7 h-7 text-jet-200 text-xl' }} >
                         <VscChromeClose />
                     </IconContext.Provider>
                 }
@@ -48,7 +48,9 @@ const Navigation = (props: Props) => {
             </button>
 
             <nav className='ml-3 flex max-w-6xl items-center justify-between pt-2 sm:mx-auto'>
-                <span className='hidden text-lg font-semibold text-jet-200 sm:block'>Jakub Abrahoim</span>
+                <span className='hidden text-lg font-semibold text-jet-200 sm:block'>
+                    Jakub Abrahoim
+                </span>
                 <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex`}>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
                     <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />
