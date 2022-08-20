@@ -7,7 +7,7 @@ import Navigation from '../components/Navigation/Navigation'
 
 const Home: NextPage = () => {
 	return (
-		<section className='min-h-screen bg-zinc-100'>
+		<section className='min-h-screen bg-zinc-100 font-montserrat'>
 			<Head>
 				<title>Home</title>
 			</Head>

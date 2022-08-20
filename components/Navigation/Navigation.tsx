@@ -13,9 +13,9 @@ const Navigation = () => {
                 <div className='flex'>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
                     <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />
-                    <NavigationLink href='#' icon={<GiKnifeFork />} caption='Cooking' />
-                    <NavigationLink href='#' icon={<BsPencil />} caption='Blog' />
-                    <NavigationLink href='#' icon={<GrUserAdmin />} caption='Admin' />
+                    <NavigationLink href='/cooking' icon={<GiKnifeFork />} caption='Cooking' />
+                    <NavigationLink href='/blog' icon={<BsPencil />} caption='Blog' />
+                    <NavigationLink href='/admin' icon={<GrUserAdmin />} caption='Admin' />
                 </div>
             </nav>
         </header>
