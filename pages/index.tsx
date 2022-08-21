@@ -12,6 +12,7 @@ const Home: NextPage = () => {
 				<meta name='author' content='Jakub Abrahoim' />
 				<meta name='keywords' content='Jakub Abrahoim' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+				<link rel='icon' type='image/x-icon' href='/images/homeFavicon.ico' />
 				<title>Home</title>
 			</Head>
 			<Navigation />
