@@ -17,10 +17,12 @@ const LoginForm = () => {
 
     return (
         <div className='flex h-full w-screen items-center justify-center'>
+            
             <form 
                 onSubmit={submitLoginForm}
                 className='absolute'
             >
+                <h1 className='mb-4 w-full cursor-default text-center text-lg font-semibold text-jet-200'>Are you admin?</h1>
                 <label className='mb-7 flex flex-col'>
                     <IconContext.Provider value={{ className: emailPasswordIconStyle }}>
                         <MdAlternateEmail />
