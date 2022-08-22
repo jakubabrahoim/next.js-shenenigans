@@ -12,8 +12,11 @@ export const useUser = () => {
         }
 
         return () => { 
-            handleChange(auth.currentUser);
-        };
+            auth.onAuthStateChanged((user) => {
+                if(user) handleChange(user);
+                else handleChange(null);
+            }
+        )};
     });
     return currentUser;
 }
