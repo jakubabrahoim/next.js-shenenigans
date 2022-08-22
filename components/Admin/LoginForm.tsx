@@ -1,18 +1,41 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
-import { IconContext } from "react-icons";
+import { IconContext } from 'react-icons';
 import { MdAlternateEmail, MdLockOutline } from 'react-icons/md';
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 
+import { app } from "../../firebaseConfig";
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { useUser } from "../../hooks/useUser";
+
 const LoginForm = () => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+    const [emailInput, setEmailInput] = useState('');
+    const [passwordInput, setPasswordInput] = useState('');
+    const router = useRouter();
+    const currentUser = useUser();
     
     const inputFieldStyle: string = 'h-10 w-56 rounded-lg border px-6 align-middle outline-none focus:ring-1 focus:ring-orchid-200';
     const emailPasswordIconStyle: string = 'w-4 h-4 ml-1 -mt-7 relative top-7 text-slate-400';
     const showPasswordIconStyle: string = 'w-4 h-4 mr-1 -mb-7 relative bottom-7 left-9/10 text-slate-400 hover:text-orchid-200 transition duration-500';
 
+
+    useEffect(() => {
+        if(currentUser) {
+            router.push('/');
+        }
+    }, [currentUser, router]);
+
     const submitLoginForm = (event: FormEvent) => {
         event.preventDefault();
+        
+        const auth = getAuth(app);
+        signInWithEmailAndPassword(auth, emailInput, passwordInput)
+            .then(() => {
+                router.push('/');
+            })
+            .catch(() => {});
     }
 
     return (
@@ -30,7 +53,10 @@ const LoginForm = () => {
                     <input
                         className={inputFieldStyle}
                         type='email'
+                        name='email'
                         placeholder='E-mail'
+                        value={emailInput}
+                        onChange={(event) => setEmailInput(event.target.value)}
                     />
                 </label>
                 <label className='mb-4 flex flex-col'>
@@ -40,9 +66,12 @@ const LoginForm = () => {
                     <input 
                         className={inputFieldStyle}
                         type={`${isPasswordVisible ? 'text' : 'password'}`}
+                        name='password'
                         placeholder='Password'
+                        value={passwordInput}
+                        onChange={(event) => setPasswordInput(event.target.value)}
                     />
-                    <button 
+                    <span 
                         onClick={() => setIsPasswordVisible(!isPasswordVisible)}
                         aria-labelledby='showPassword'
                     >
@@ -65,7 +94,7 @@ const LoginForm = () => {
                             </IconContext.Provider>
                         }
                         <span id='showPassword' hidden>Show/Hide password</span>
-                    </button>
+                    </span>
                 </label>
                 <input 
                     className='h-7 w-full cursor-pointer rounded-lg bg-orchid text-white transition duration-500 hover:bg-orchid-200'
