@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/router";
 
 import { IconContext } from 'react-icons';
@@ -7,25 +7,16 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 
 import { app } from "../../firebaseConfig";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { useUser } from "../../hooks/useUser";
 
 const LoginForm = () => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     const router = useRouter();
-    const currentUser = useUser();
     
     const inputFieldStyle: string = 'h-10 w-56 rounded-lg border px-6 align-middle outline-none focus:ring-1 focus:ring-orchid-200';
     const emailPasswordIconStyle: string = 'w-4 h-4 ml-1 -mt-7 relative top-7 text-slate-400';
     const showPasswordIconStyle: string = 'w-4 h-4 mr-1 -mb-7 relative bottom-7 left-9/10 text-slate-400 hover:text-orchid-200 transition duration-500';
-
-
-    useEffect(() => {
-        if(currentUser) {
-            router.push('/');
-        }
-    }, [currentUser, router]);
 
     const submitLoginForm = (event: FormEvent) => {
         event.preventDefault();
