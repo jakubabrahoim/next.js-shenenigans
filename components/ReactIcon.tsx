@@ -9,7 +9,7 @@ interface Props {
 const ReactIcon = ({icon, iconClass, tooltip}: Props) => {
     if(tooltip) return (
         <div className='group relative'>
-            <span className='absolute left-full mt-0.5 ml-1 hidden rounded-lg bg-jet-200/20 px-2 py-1 text-orchid-200 group-hover:block'>
+            <span className='absolute left-full mt-0.5 ml-1 rounded-lg bg-jet-200/20 px-2 py-1 text-orchid-200 opacity-0 transition-opacity duration-500 group-hover:opacity-100'>
                 {tooltip}
             </span>
             <IconContext.Provider value={{className: iconClass}}>
