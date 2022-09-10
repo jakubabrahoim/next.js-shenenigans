@@ -1,7 +1,11 @@
+import About from "./About";
+import Skills from "./Skills";
+
 const HomeWrapper = () => {
     return (
-        <div className='mx-auto mt-20 flex max-w-6xl flex-col items-center'>
-            <h1 className='text-center text-2xl'>Hello there 👋🏽, welcome to my website.</h1>
+        <div className='mx-auto mt-20 max-w-6xl'>
+            <About />
+            <Skills />
         </div>
     )
 }
