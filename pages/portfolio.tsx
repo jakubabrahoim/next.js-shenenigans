@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation/Navigation';
 
 const Portfolio: NextPage = () => {
 	return (
-		<section className='min-h-screen bg-alabaster font-montserrat text-stone-800'>
+		<section className='min-h-screen bg-alabaster font-montserrat text-jet-200'>
 			<Head>
 				<meta charSet='utf-8' />
 				<meta name='author' content='Jakub Abrahoim' />
@@ -15,6 +15,9 @@ const Portfolio: NextPage = () => {
 				<title>Portfolio</title>
 			</Head>
             <Navigation />
+			<div className='mx-auto mt-16 max-w-6xl'>
+				<h1 className='text-center text-4xl font-bold'>Comming soon</h1>
+			</div>
 		</section>
 	)
 }
