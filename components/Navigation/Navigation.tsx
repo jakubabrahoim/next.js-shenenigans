@@ -5,7 +5,6 @@ import NavigationLink from "./NavigationLink";
 import { IconContext } from "react-icons";
 import { VscCode, VscHome, VscChromeClose } from 'react-icons/vsc';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { RiAdminLine } from 'react-icons/ri';
 
 interface Props {
     navigationType?: 'admin' | undefined;
@@ -14,6 +13,8 @@ interface Props {
 const Navigation = (props: Props) => {   
     let [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     
+
+    /* Admin specific navigation */
     if(props.navigationType === 'admin') return (
         <header className='h-0.5/10'>
             <nav className='pt-2'>
@@ -49,7 +50,7 @@ const Navigation = (props: Props) => {
                 <span className='hidden text-lg font-semibold text-jet-200 sm:block'>
                     Jakub Abrahoim
                 </span>
-                <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex sm:flex-row`}>
+                <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex sm:flex-row sm:space-y-0`}>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
                     <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />    
                 </div>
