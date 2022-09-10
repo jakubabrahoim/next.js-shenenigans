@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section>
+        <section className='px-2 sm:p-0'>
             <h1 className='mb-2 w-full text-left text-4xl font-bold'>
                 Hello, I&apos;m Jakub.<br/>
                 I&apos;m a Web Developer.

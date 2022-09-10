@@ -5,9 +5,9 @@ const Skills = () => {
     const iconClass: string = 'w-10 h-10 hover:text-orchid-200 transition duration-500';
 
     return (
-        <section className='mt-10'>
-            <h2 className='mb-6 text-2xl font-semibold underline underline-offset-4'>Skills</h2>
-            <div className='ml-4 grid w-2/3 grid-cols-4 justify-items-start gap-6'>
+        <section className='mt-10 px-2 sm:px-0'>
+            <h2 className='mb-4 text-2xl font-semibold underline underline-offset-4'>Skills</h2>
+            <div className='grid grid-cols-4 justify-items-center gap-6 sm:w-2/3 sm:justify-items-start sm:p-4'>
                 <ReactIcon icon={<SiHtml5 />} iconClass={iconClass} />
                 <ReactIcon icon={<SiCss3 />} iconClass={iconClass} />
                 <ReactIcon icon={<SiTailwindcss />} iconClass={iconClass} />
