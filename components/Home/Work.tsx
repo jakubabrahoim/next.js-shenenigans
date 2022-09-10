@@ -16,7 +16,7 @@ const Work = () => {
                 Work experience
             </h2>
             <div>
-                <div className='mb-4 flex w-fit flex-col gap-1'>
+                <div className='flex w-fit flex-col gap-1'>
                     <h3 className='text-xl font-medium'>
                         Web developer at{' '}
                         <a
@@ -48,6 +48,7 @@ const Work = () => {
                         </span>
                     </div>
                 </div>
+                <hr className='my-4 w-1/6 border border-jet-200' />
                 <div className='mb-4 flex w-fit flex-col gap-1'>
                     <h3 className='text-xl font-medium'>
                         Freelance web developer
