@@ -52,7 +52,6 @@ const Navigation = (props: Props) => {
                 <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex sm:flex-row`}>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
                     <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />    
-                    <NavigationLink href='/admin' icon={<RiAdminLine />} caption='Admin' />
                 </div>
             </nav>
         </header>
