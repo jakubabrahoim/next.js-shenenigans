@@ -5,8 +5,6 @@ import NavigationLink from "./NavigationLink";
 import { IconContext } from "react-icons";
 import { VscCode, VscHome, VscChromeClose } from 'react-icons/vsc';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { GiKnifeFork } from 'react-icons/gi';
-import { BsPencil } from 'react-icons/bs';
 import { RiAdminLine } from 'react-icons/ri';
 
 interface Props {
@@ -53,9 +51,7 @@ const Navigation = (props: Props) => {
                 </span>
                 <div className={`${!isMobileMenuOpen ? 'hidden' : 'flex flex-col space-y-1'} sm:flex sm:flex-row`}>
                     <NavigationLink href='/' icon={<VscHome />} caption='Home' />
-                    <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />
-                    <NavigationLink href='/cooking' icon={<GiKnifeFork />} caption='Cooking' />
-                    <NavigationLink href='/blog' icon={<BsPencil />} caption='Blog' />
+                    <NavigationLink href='/portfolio' icon={<VscCode />} caption='Portfolio' />    
                     <NavigationLink href='/admin' icon={<RiAdminLine />} caption='Admin' />
                 </div>
             </nav>
