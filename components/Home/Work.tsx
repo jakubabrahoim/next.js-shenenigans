@@ -18,7 +18,7 @@ const Work = () => {
             <div>
                 <div className='flex gap-2'>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src='/images/ayanza.png' alt='Ayanza' className='w-16 h-16' />
+                    <img src='/images/ayanza.png' alt='Ayanza' className='h-16 w-16' />
                     <div className='flex w-fit flex-col gap-1'>
                         <h3 className='text-xl font-medium'>
                             Web developer at{' '}
