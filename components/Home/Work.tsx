@@ -2,9 +2,9 @@ import { SiTypescript, SiVuedotjs, SiFirebase } from 'react-icons/si';
 import ReactIcon from '../ReactIcon';
 
 const Work = () => {
-    const calculateTime = (start: string) => {
+    const calculateTime = (start: string, end?: string ) => {
         const startDate = new Date(start);
-        const currentDate = new Date();
+        const currentDate = end ? new Date(end) : new Date();
         
         let diff = Math.abs(Math.floor((startDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24))) / 30;
         return Math.ceil(diff);
