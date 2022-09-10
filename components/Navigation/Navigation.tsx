@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import NavigationLink from "./NavigationLink";
 
-import { IconContext } from "react-icons";
+import ReactIcon from "../ReactIcon";
 import { VscCode, VscHome, VscChromeClose } from 'react-icons/vsc';
 import { AiOutlineMenu } from 'react-icons/ai';
 
@@ -35,13 +35,9 @@ const Navigation = (props: Props) => {
             >
                 {
                     !isMobileMenuOpen ?
-                    <IconContext.Provider value={{ className: 'w-7 h-7 text-jet-200 font-semibold text-xl' }} >
-                        <AiOutlineMenu />
-                    </IconContext.Provider>
+                    <ReactIcon icon={<AiOutlineMenu />} iconClass='w-7 h-7 text-jet-200 font-semibold text-xl' />
                     :
-                    <IconContext.Provider value={{ className: 'w-7 h-7 text-jet-200 text-xl' }} >
-                        <VscChromeClose />
-                    </IconContext.Provider>
+                    <ReactIcon icon={<VscChromeClose />} iconClass='w-7 h-7 text-jet-200 font-semibold text-xl' />
                 }
                 <span id='mobileMenu' hidden>Mobile menu</span>
             </button>
