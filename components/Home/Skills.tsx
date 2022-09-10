@@ -1,4 +1,7 @@
-import { SiTailwindcss, SiJavascript, SiHtml5, SiTypescript, SiReact, SiPostgresql, SiVuedotjs, SiGit, SiNodedotjs, SiPython, SiCss3, SiFirebase } from 'react-icons/si';
+import { 
+    SiTailwindcss, SiJavascript, SiHtml5, SiTypescript, 
+    SiReact, SiPostgresql, SiVuedotjs, SiGit, 
+    SiNodedotjs, SiFigma, SiCss3, SiFirebase } from 'react-icons/si';
 import ReactIcon from '../ReactIcon';
 
 const Skills = () => {
@@ -19,7 +22,7 @@ const Skills = () => {
                 <ReactIcon icon={<SiPostgresql />} iconClass={iconClass} tooltip='PostgreSQL' />
                 <ReactIcon icon={<SiFirebase />} iconClass={iconClass} tooltip='Firebase' />
                 <ReactIcon icon={<SiGit />} iconClass={iconClass} tooltip='Git' />
-                <ReactIcon icon={<SiPython />} iconClass={iconClass} tooltip='Python' />
+                <ReactIcon icon={<SiFigma />} iconClass={iconClass} tooltip='Figma' />
             </div>  
         </section>
     )
