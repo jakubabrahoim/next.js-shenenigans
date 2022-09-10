@@ -16,7 +16,7 @@ import ReactIcon from "../ReactIcon";
 
 const Skills = () => {
     const iconClass: string =
-        "w-10 h-10 hover:text-orchid-200 transition duration-500";
+        "w-10 h-10 group-hover:text-orchid-200 transition duration-500";
 
     return (
         <section className="mt-10 px-2 sm:px-0">
