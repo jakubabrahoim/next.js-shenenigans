@@ -16,7 +16,17 @@ const Hobbies = () => {
                 </span>
                 <span className='flex items-center gap-2'>
                     <ReactIcon icon={<GiKnifeFork />} iconClass='w-7 h-7' />
-                    Cooking
+                    <p>
+                    Cooking (you can check some of my recipes at my &nbsp;
+                        <a 
+                            href='https://jakub-abrahoim.notion.site/4c571061bd5748c2b41795065df831be?v=263515eebeea44e28216fd6b4be65f41'
+                            className='font-bold text-orchid underline underline-offset-2 transition duration-500 hover:text-orchid-200'
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            Notion site
+                        </a>)
+                    </p>
                 </span>
                 <span className='flex items-center gap-2'>
                     <ReactIcon icon={<GiTv />} iconClass='w-7 h-7' />
