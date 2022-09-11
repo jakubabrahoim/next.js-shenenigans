@@ -2,6 +2,7 @@ import About from './About';
 import Education from './Education';
 import Skills from './Skills';
 import Work from './Work';
+import Hobbies from './Hobbies';
 
 const HomeWrapper = () => {
     return (
@@ -10,6 +11,7 @@ const HomeWrapper = () => {
             <Skills />
             <Education />
             <Work />
+            <Hobbies />
         </div>
     );
 };
