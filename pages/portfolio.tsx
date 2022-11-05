@@ -2,10 +2,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Navigation from '../components/Navigation/Navigation';
+import PortfolioWrapper from '../components/Portfolio/PorfolioWrapper';
 
 const Portfolio: NextPage = () => {
 	return (
-		<section className='min-h-screen bg-alabaster font-montserrat text-jet-200'>
+		<section className='min-h-screen bg-alabaster px-4 font-montserrat text-jet-200 xl:px-0'>
 			<Head>
 				<meta charSet='utf-8' />
 				<meta name='author' content='Jakub Abrahoim' />
@@ -15,9 +16,7 @@ const Portfolio: NextPage = () => {
 				<title>Portfolio</title>
 			</Head>
             <Navigation />
-			<div className='mx-auto mt-16 max-w-6xl'>
-				<h1 className='text-center text-4xl font-bold'>Comming soon</h1>
-			</div>
+			<PortfolioWrapper />
 		</section>
 	)
 }
