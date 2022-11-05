@@ -54,7 +54,7 @@ const PortfolioWrapper = () => {
     return (
         <div className='mx-auto mt-16 max-w-6xl'>
             <h1 className='mb-4 text-xl font-semibold sm:text-2xl'>Some of the projects I worked on...</h1>
-            <div className='grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='mb-10 grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3'>
                 <PortfolioItem projectInfo={projects[0]} />
                 <PortfolioItem projectInfo={projects[1]} />
                 <PortfolioItem projectInfo={projects[2]} />
