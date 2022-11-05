@@ -18,6 +18,13 @@ const PortfolioWrapper = () => {
             websiteUrl: 'https://www.bocek.sk',
         },
         {
+            name: 'Poliklinika Mlynská dolina',
+            description: 'This was a website for a medical clinic called Poliklinika Mlynská dolina.',
+            imageSrc: '/images/poliklinika.png',
+            technologies: ['Wix', 'JavaScript', 'Google Analytics'],
+            websiteUrl: 'https://www.klinikamd.sk',
+        },
+        {
             name: 'Activity Diagrams',
             description: 'Activity Diagrams is a diagraming tool for activity diagrams written with JointJS that generates SystemVerilog code.',
             imageSrc: '/images/activity-diagrams.png',
@@ -49,13 +56,6 @@ const PortfolioWrapper = () => {
             websiteUrl: 'https://jakub-abrahoim.vercel.app',
             githubUrl: 'https://github.com/jakubabrahoim/personal-website',
         },
-        {
-            name: 'Poliklinika Mlynská dolina',
-            description: 'This was a website for a medical clinic called Poliklinika Mlynská dolina.',
-            imageSrc: '/images/poliklinika.png',
-            technologies: ['Wix', 'JavaScript', 'Google Analytics'],
-            websiteUrl: 'https://www.klinikamd.sk',
-        }
     ]
 
     return (
