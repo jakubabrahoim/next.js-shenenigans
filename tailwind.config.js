@@ -32,6 +32,9 @@ module.exports = {
       },
       spacing: {
         '9/10': '90%',
+      },
+      blur: {
+        'xs': '2px',
       }
     },
   },
