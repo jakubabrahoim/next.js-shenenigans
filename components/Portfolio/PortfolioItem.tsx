@@ -8,7 +8,7 @@ interface Props {
 
 const PortfolioItem = ({ projectInfo }: Props) => {
     return (
-        <article className='flex w-full flex-col rounded-lg border border-jet-200 transition-transform hover:scale-105 hover:shadow-xl'>
+        <article className='z-50 flex w-full flex-col rounded-lg border border-jet-200 bg-alabaster transition-transform hover:scale-105 hover:shadow-xl'>
             <div className='group relative mb-2 w-full rounded-t-lg border-b border-jet-200'>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={projectInfo.imageSrc} alt='IH project s.r.o' className='w-full rounded-t-lg group-hover:blur-xs' />
