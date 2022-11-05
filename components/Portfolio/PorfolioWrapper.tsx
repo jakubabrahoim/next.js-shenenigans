@@ -36,7 +36,7 @@ const PortfolioWrapper = () => {
             name: 'Radio-Stream',
             description: 'Radio-Stream is a radio streaming platform where you can listen to your favorite radio stations form around the world.',
             imageSrc: '/images/radio-stream.png',
-            technologies: ['React', 'TypeScript', 'React router', 'TailwindCSS', 'Firebase'],
+            technologies: ['React', 'TypeScript', 'TailwindCSS', 'Firebase'],
             websiteUrl: 'https://radio-stream.live',
             githubUrl: 'https://github.com/jakubabrahoim/Radio-Stream',
         },
