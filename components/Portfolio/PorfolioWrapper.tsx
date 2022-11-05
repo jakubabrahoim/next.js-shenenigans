@@ -48,19 +48,27 @@ const PortfolioWrapper = () => {
             technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],
             websiteUrl: 'https://jakub-abrahoim.vercel.app',
             githubUrl: 'https://github.com/jakubabrahoim/personal-website',
+        },
+        {
+            name: 'Poliklinika Mlynská dolina',
+            description: 'This was a website for a medical clinic called Poliklinika Mlynská dolina.',
+            imageSrc: '/images/poliklinika.png',
+            technologies: ['Wix', 'JavaScript', 'Google Analytics'],
+            websiteUrl: 'https://www.klinikamd.sk',
         }
     ]
 
     return (
         <div className='mx-auto mt-16 max-w-6xl'>
             <h1 className='mb-4 text-xl font-semibold sm:text-2xl'>Some of the projects I worked on...</h1>
-            <div className='mb-10 grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid grid-cols-1 justify-items-center gap-10 pb-10 md:grid-cols-2 lg:grid-cols-3'>
                 <PortfolioItem projectInfo={projects[0]} />
                 <PortfolioItem projectInfo={projects[1]} />
                 <PortfolioItem projectInfo={projects[2]} />
                 <PortfolioItem projectInfo={projects[3]} />
                 <PortfolioItem projectInfo={projects[4]} />
                 <PortfolioItem projectInfo={projects[5]} />
+                <PortfolioItem projectInfo={projects[6]} />
             </div>
         </div>
     )
