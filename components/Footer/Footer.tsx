@@ -3,6 +3,7 @@ import {
     AiOutlineInstagram,
     AiOutlineLinkedin,
     AiOutlineGithub,
+    AiOutlineTwitter,
 } from 'react-icons/ai';
 import ReactIcon from '../ReactIcon';
 
@@ -44,6 +45,16 @@ const Footer = () => {
                 >
                     <ReactIcon
                         icon={<AiOutlineGithub />}
+                        iconClass='w-6 h-6 hover:text-orchid-200 transition duration-500 cursor-pointer'
+                    />
+                </a>
+                <a
+                    href='https://twitter.com/JakubAbrahoim'
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    <ReactIcon
+                        icon={<AiOutlineTwitter />}
                         iconClass='w-6 h-6 hover:text-orchid-200 transition duration-500 cursor-pointer'
                     />
                 </a>
