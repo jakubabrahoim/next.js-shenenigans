@@ -45,7 +45,7 @@ const Footer = () => {
                 >
                     <ReactIcon
                         icon={<AiOutlineGithub />}
-                        iconClass='w-6 h-6 hover:text-orchid-200 transition duration-500 cursor-pointer'
+                        iconClass='mr-1.5 w-6 h-6 hover:text-orchid-200 transition duration-500 cursor-pointer'
                     />
                 </a>
                 <a
