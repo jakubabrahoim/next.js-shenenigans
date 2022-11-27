@@ -1,12 +1,24 @@
-import { SiTypescript, SiVuedotjs, SiFirebase, SiFreelancer } from 'react-icons/si';
+import {
+    SiTypescript,
+    SiVuedotjs,
+    SiFirebase,
+    SiFreelancer,
+} from 'react-icons/si';
 import ReactIcon from '../ReactIcon';
 
 const Work = () => {
-    const calculateTime = (start: string, end?: string ) => {
+    /* Date is passed in mm/dd/yyyy format */
+    const calculateTime = (start: string, end?: string) => {
         const startDate = new Date(start);
         const currentDate = end ? new Date(end) : new Date();
-        
-        let diff = Math.abs(Math.floor((startDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24))) / 30;
+
+        let diff =
+            Math.abs(
+                Math.floor(
+                    (startDate.getTime() - currentDate.getTime()) /
+                        (1000 * 60 * 60 * 24)
+                )
+            ) / 30;
         return Math.ceil(diff);
     };
 
@@ -18,7 +30,11 @@ const Work = () => {
             <div>
                 <div className='flex gap-2'>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src='/images/ayanza.png' alt='Ayanza' className='h-16 w-16' />
+                    <img
+                        src='/images/ayanza.png'
+                        alt='Ayanza'
+                        className='h-16 w-16'
+                    />
                     <div className='flex w-fit flex-col gap-1'>
                         <h3 className='text-xl font-medium'>
                             Web developer at{' '}
@@ -47,7 +63,8 @@ const Work = () => {
                         </div>
                         <div>
                             <span>
-                                August 2022 - present, {calculateTime('2022-8-1')} months
+                                August 2022 - present,{' '}
+                                {calculateTime('08/01/2022')} months
                             </span>
                         </div>
                     </div>
@@ -64,7 +81,8 @@ const Work = () => {
                         <span>Bratislava, Slovakia</span>
                         <div>
                             <span>
-                                April 2021 - present, {calculateTime('2021-4-1')} months
+                                April 2021 - present,{' '}
+                                {calculateTime('04/01/2021')} months
                             </span>
                         </div>
                     </div>
