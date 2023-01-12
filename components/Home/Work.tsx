@@ -43,9 +43,16 @@ const Work = () => {
             </h2>
             <div>
                 <div className='flex gap-2'>
-                    <ReactIcon icon={<SiFreelancer />} iconClass='w-16 h-16' />
+                    <div className='flex flex-col items-center'>
+                        <ReactIcon
+                            icon={<SiFreelancer />}
+                            iconClass='w-14 h-14 no-shrink'
+                        />
+                        <div className='w-px grow border-l border-jet-200'></div>
+                    </div>
+
                     <div className='mb-4 flex w-fit flex-col gap-1'>
-                        <h3 className='text-xl font-medium'>
+                        <h3 className='text-xl font-medium underline underline-offset-2'>
                             Freelance web developer
                         </h3>
                         <span>Bratislava, Slovakia</span>
@@ -58,17 +65,15 @@ const Work = () => {
                     </div>
                 </div>
 
-                <hr className='my-4 w-1/6 border border-jet-200' />
-
                 <div className='flex gap-2'>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src='/images/ayanza.png'
                         alt='Ayanza'
-                        className='h-16 w-16'
+                        className='h-14 w-14'
                     />
                     <div className='flex w-fit flex-col gap-1'>
-                        <h3 className='text-xl font-medium'>
+                        <h3 className='text-xl font-medium underline underline-offset-2'>
                             Web developer at{' '}
                             <a
                                 className='font-bold text-orchid underline underline-offset-2 transition duration-500 hover:text-orchid-200'
