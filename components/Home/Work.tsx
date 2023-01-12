@@ -29,6 +29,24 @@ const Work = () => {
             </h2>
             <div>
                 <div className='flex gap-2'>
+                    <ReactIcon icon={<SiFreelancer />} iconClass='w-16 h-16' />
+                    <div className='mb-4 flex w-fit flex-col gap-1'>
+                        <h3 className='text-xl font-medium'>
+                            Freelance web developer
+                        </h3>
+                        <span>Bratislava, Slovakia</span>
+                        <div>
+                            <span>
+                                April 2021 - present,{' '}
+                                {calculateTime('04/01/2021')} months
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr className='my-4 w-1/6 border border-jet-200' />
+
+                <div className='flex gap-2'>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src='/images/ayanza.png'
@@ -65,24 +83,6 @@ const Work = () => {
                             <span>
                                 August 2022 - present,{' '}
                                 {calculateTime('08/01/2022')} months
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <hr className='my-4 w-1/6 border border-jet-200' />
-
-                <div className='flex gap-2'>
-                    <ReactIcon icon={<SiFreelancer />} iconClass='w-16 h-16' />
-                    <div className='mb-4 flex w-fit flex-col gap-1'>
-                        <h3 className='text-xl font-medium'>
-                            Freelance web developer
-                        </h3>
-                        <span>Bratislava, Slovakia</span>
-                        <div>
-                            <span>
-                                April 2021 - present,{' '}
-                                {calculateTime('04/01/2021')} months
                             </span>
                         </div>
                     </div>
