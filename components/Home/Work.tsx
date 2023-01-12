@@ -19,7 +19,21 @@ const Work = () => {
                         (1000 * 60 * 60 * 24)
                 )
             ) / 30;
-        return Math.ceil(diff);
+
+        if (Math.ceil(diff) >= 12) {
+            const years = Math.floor(Math.ceil(diff) / 12);
+            const months = Math.ceil(diff) % 12;
+            const yearsString = years === 1 ? 'year' : 'years';
+            const monthsString = months === 1 ? 'month' : 'months';
+
+            if (months === 0) {
+                return `${years} years`;
+            } else {
+                return `${years} ${yearsString} ${months} ${monthsString}`;
+            }
+        } else {
+            return `${Math.ceil(diff)} months`;
+        }
     };
 
     return (
@@ -38,7 +52,7 @@ const Work = () => {
                         <div>
                             <span>
                                 April 2021 - present,{' '}
-                                {calculateTime('04/01/2021')} months
+                                {calculateTime('04/01/2021')}
                             </span>
                         </div>
                     </div>
@@ -82,7 +96,7 @@ const Work = () => {
                         <div>
                             <span>
                                 August 2022 - present,{' '}
-                                {calculateTime('08/01/2022')} months
+                                {calculateTime('08/01/2022')}
                             </span>
                         </div>
                     </div>
