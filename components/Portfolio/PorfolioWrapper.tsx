@@ -14,7 +14,7 @@ const PortfolioWrapper = () => {
         {
             name: 'Boček s.r.o',
             description:
-                'This project was a update for a already existing website for a company called Boček s.r.o.',
+                'This project was a update for an already existing website for a company called Boček s.r.o.',
             imageSrc: '/images/bocek.png',
             technologies: ['HTML', 'CSS', 'JavaScript'],
             websiteUrl: 'https://www.bocek.sk',
