@@ -86,6 +86,7 @@ const PortfolioWrapper = () => {
                 <PortfolioItem projectInfo={projects[4]} />
                 <PortfolioItem projectInfo={projects[5]} />
                 <PortfolioItem projectInfo={projects[6]} />
+                <PortfolioItem projectInfo={projects[7]} />
             </div>
         </div>
     );
