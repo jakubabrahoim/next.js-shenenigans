@@ -63,6 +63,14 @@ const PortfolioWrapper = () => {
             websiteUrl: 'https://jakub-abrahoim.vercel.app',
             githubUrl: 'https://github.com/jakubabrahoim/personal-website',
         },
+        {
+            name: 'Igni',
+            description:
+                'Simple task management app with kanban and table views ✅.',
+            imageSrc: '/images/igni.png',
+            technologies: ['Nuxt', 'TypeScript', 'TailwindCSS', 'Firebase'],
+            websiteUrl: 'https://igni-flow.vercel.app',
+        },
     ];
 
     return (
