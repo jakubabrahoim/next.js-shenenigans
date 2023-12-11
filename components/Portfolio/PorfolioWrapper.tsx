@@ -4,20 +4,21 @@ import PortfolioItem from './PortfolioItem';
 const PortfolioWrapper = () => {
     const projects: Array<PortolioItem> = [
         {
-            name: 'IH project s.r.o',
+            name: 'Radio-Stream',
             description:
-                "This project was a website for a company called IH project s.r.o. It was also my first website so it doesn't look that good 🙈.",
-            imageSrc: '/images/ihproject.png',
-            technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-            websiteUrl: 'https://www.ihproject.sk/index.html',
+                'Radio-Stream is a radio streaming platform where you can listen to your favorite radio stations from around the world.',
+            imageSrc: '/images/radio-stream.png',
+            technologies: ['React', 'TypeScript', 'TailwindCSS', 'Firebase'],
+            websiteUrl: 'https://radio-stream.live',
+            githubUrl: 'https://github.com/jakubabrahoim/Radio-Stream',
         },
         {
-            name: 'Boček s.r.o',
+            name: 'Igni',
             description:
-                'This project was a update for an already existing website for a company called Boček s.r.o.',
-            imageSrc: '/images/bocek.png',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            websiteUrl: 'https://www.bocek.sk',
+                'Simple task management app with kanban and table views ✅.',
+            imageSrc: '/images/igni.png',
+            technologies: ['Nuxt', 'TypeScript', 'TailwindCSS', 'Firebase'],
+            websiteUrl: 'https://igni-flow.vercel.app',
         },
         {
             name: 'Poliklinika Mlynská dolina',
@@ -37,13 +38,12 @@ const PortfolioWrapper = () => {
             githubUrl: 'https://github.com/jakubabrahoim/Activity-Diagrams',
         },
         {
-            name: 'Radio-Stream',
+            name: 'Boček s.r.o',
             description:
-                'Radio-Stream is a radio streaming platform where you can listen to your favorite radio stations from around the world.',
-            imageSrc: '/images/radio-stream.png',
-            technologies: ['React', 'TypeScript', 'TailwindCSS', 'Firebase'],
-            websiteUrl: 'https://radio-stream.live',
-            githubUrl: 'https://github.com/jakubabrahoim/Radio-Stream',
+                'This project was a update for an already existing website for a company called Boček s.r.o.',
+            imageSrc: '/images/bocek.png',
+            technologies: ['HTML', 'CSS', 'JavaScript'],
+            websiteUrl: 'https://www.bocek.sk',
         },
         {
             name: 'Sticker Whiteboard',
@@ -64,12 +64,12 @@ const PortfolioWrapper = () => {
             githubUrl: 'https://github.com/jakubabrahoim/personal-website',
         },
         {
-            name: 'Igni',
+            name: 'IH project s.r.o',
             description:
-                'Simple task management app with kanban and table views ✅.',
-            imageSrc: '/images/igni.png',
-            technologies: ['Nuxt', 'TypeScript', 'TailwindCSS', 'Firebase'],
-            websiteUrl: 'https://igni-flow.vercel.app',
+                "This project was a website for a company called IH project s.r.o. It was also my first website so it doesn't look that good 🙈.",
+            imageSrc: '/images/ihproject.png',
+            technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+            websiteUrl: 'https://www.ihproject.sk/index.html',
         },
     ];
 
