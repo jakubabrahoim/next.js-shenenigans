@@ -100,7 +100,7 @@ const Work = () => {
                         </div>
                         <div>
                             <span>
-                                August 2022 - October 2023
+                                August 2022 - October 2023,{' '}
                                 {calculateTime('08/01/2022', '10/01/2023')}
                             </span>
                         </div>
