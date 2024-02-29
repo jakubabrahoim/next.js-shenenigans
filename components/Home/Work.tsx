@@ -7,7 +7,7 @@ import {
 import ReactIcon from '../ReactIcon';
 
 const Work = () => {
-    /* Date is passed in mm/dd/yyyy format */
+    /** Date is passed in mm/dd/yyyy format */
     const calculateTime = (start: string, end?: string) => {
         const startDate = new Date(start);
         const currentDate = end ? new Date(end) : new Date();
@@ -100,8 +100,8 @@ const Work = () => {
                         </div>
                         <div>
                             <span>
-                                August 2022 - present,{' '}
-                                {calculateTime('08/01/2022')}
+                                August 2022 - October 2023
+                                {calculateTime('08/01/2022', '10/01/2023')}
                             </span>
                         </div>
                     </div>
