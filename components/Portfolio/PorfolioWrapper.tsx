@@ -4,6 +4,22 @@ import PortfolioItem from './PortfolioItem';
 const PortfolioWrapper = () => {
     const projects: Array<PortolioItem> = [
         {
+            name: 'Poliklinika CHIRKOZ',
+            description:
+                'Website for a clinic that specializes in plastic surgery.',
+            imageSrc: '/images/chirkoz.png',
+            technologies: ['NextJS', 'TailwindCSS', 'Framer Motion'],
+            websiteUrl: 'https://www.chirkoz.sk',
+        },
+        {
+            name: 'Poliklinika Mlynská dolina',
+            description:
+                'This was a website for a medical clinic called Poliklinika Mlynská dolina.',
+            imageSrc: '/images/poliklinika.png',
+            technologies: ['Wix', 'JavaScript', 'Google Analytics'],
+            websiteUrl: 'https://www.klinikamd.sk',
+        },
+        {
             name: 'Radio-Stream',
             description:
                 'Radio-Stream is a radio streaming platform where you can listen to your favorite radio stations from around the world.',
@@ -21,14 +37,6 @@ const PortfolioWrapper = () => {
             websiteUrl: 'https://igni-flow.vercel.app',
         },
         {
-            name: 'Poliklinika Mlynská dolina',
-            description:
-                'This was a website for a medical clinic called Poliklinika Mlynská dolina.',
-            imageSrc: '/images/poliklinika.png',
-            technologies: ['Wix', 'JavaScript', 'Google Analytics'],
-            websiteUrl: 'https://www.klinikamd.sk',
-        },
-        {
             name: 'Activity Diagrams',
             description:
                 'Activity Diagrams is a diagraming tool for activity diagrams written with JointJS that generates SystemVerilog code.',
@@ -37,14 +45,14 @@ const PortfolioWrapper = () => {
             websiteUrl: 'https://activity-diagrams.web.app',
             githubUrl: 'https://github.com/jakubabrahoim/Activity-Diagrams',
         },
-        {
-            name: 'Boček s.r.o',
-            description:
-                'This project was a update for an already existing website for a company called Boček s.r.o.',
-            imageSrc: '/images/bocek.png',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            websiteUrl: 'https://www.bocek.sk',
-        },
+        // {
+        //     name: 'Boček s.r.o',
+        //     description:
+        //         'This project was a update for an already existing website for a company called Boček s.r.o.',
+        //     imageSrc: '/images/bocek.png',
+        //     technologies: ['HTML', 'CSS', 'JavaScript'],
+        //     websiteUrl: 'https://www.bocek.sk',
+        // },
         {
             name: 'Sticker Whiteboard',
             description:
@@ -79,14 +87,18 @@ const PortfolioWrapper = () => {
                 Some of the projects I worked on...
             </h1>
             <div className='grid grid-cols-1 justify-items-center gap-10 pb-10 md:grid-cols-2 lg:grid-cols-3'>
-                <PortfolioItem projectInfo={projects[0]} />
+                {/* <PortfolioItem projectInfo={projects[0]} />
                 <PortfolioItem projectInfo={projects[1]} />
                 <PortfolioItem projectInfo={projects[2]} />
                 <PortfolioItem projectInfo={projects[3]} />
                 <PortfolioItem projectInfo={projects[4]} />
                 <PortfolioItem projectInfo={projects[5]} />
                 <PortfolioItem projectInfo={projects[6]} />
-                <PortfolioItem projectInfo={projects[7]} />
+                <PortfolioItem projectInfo={projects[7]} /> */}
+
+                {projects.map((project, index) => (
+                    <PortfolioItem key={index} projectInfo={project} />
+                ))}
             </div>
         </div>
     );
