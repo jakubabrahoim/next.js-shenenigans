@@ -25,7 +25,7 @@ const PortfolioWrapper = () => {
                 'Radio-Stream is a radio streaming platform where you can listen to your favorite radio stations from around the world.',
             imageSrc: '/images/radio-stream.png',
             technologies: ['React', 'TypeScript', 'TailwindCSS', 'Firebase'],
-            websiteUrl: 'https://radio-stream.live',
+            websiteUrl: 'https://radio-sh.web.app',
             githubUrl: 'https://github.com/jakubabrahoim/Radio-Stream',
         },
         {
